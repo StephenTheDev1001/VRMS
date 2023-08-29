@@ -26,6 +26,7 @@ const userSchema = mongoose.Schema({
       ref: "Project",
     },
   ],
+  adminPromotedBy: { type: String },
   githubHandle: { type: String }, // handle not including @, not the URL
   phone: { type: String },
   textingOk: { type: Boolean, default: false }, // is the user OK with texting at the phone number provided?
